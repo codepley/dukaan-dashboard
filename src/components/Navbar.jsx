@@ -2,7 +2,7 @@
 import { IoChevronDown, IoMenu } from "react-icons/io5";
 const Navbar = ({handleSidebar}) => {
   return (
-    <div className="absolute top-[0rem] left-0 w-full md:left-[14rem] bg-black-100 box-border md:w-[76rem] flex md:flex-row items-center justify-start py-[0.75rem] px-[2rem] gap-[1rem] border-b-[1px] border-solid border-black-85 font-body-1-medium">
+    <div className="absolute top-[0rem] left-0 w-full md:left-[14rem] xl:left-[calc(15.55%)] bg-black-100 box-border md:w-[76rem] xl:w-[calc(100%-15.55%)] flex md:flex-row items-center justify-start py-[0.75rem] px-[2rem] gap-[1rem] border-b-[1px] border-solid border-black-85 font-body-1-medium">
       <div onClick={handleSidebar} className="curson-pointer md:hidden"><IoMenu/></div>
       <div className="flex-1 flex flex-col md:flex-row items-start md:items-center justify-start md:gap-[1rem]">
         <div className="overflow-hidden flex flex-row items-center justify-start">

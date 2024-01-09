@@ -2,8 +2,8 @@ import OrderItem from "./OrderItem";
 
 const Dashboard = () => {
   return (
-    <div className="absolute top-[6rem] left-[0] md:left-[14rem] md:px-[2rem] w-full md:w-[72rem] flex flex-col items-start justify-start gap-[2rem] font-body-1-medium">
-      <div className="self-stretch flex flex-col items-start justify-start gap-[1.5rem]">
+    <div className="absolute top-[6rem] left-[0] md:left-[14rem] xl:left-[calc(15.55%)] md:px-[2rem] w-full md:w-[76rem] xl:h-[full] xl:w-[calc(100%-15.55%)] flex flex-col items-start box-border justify-start gap-[2rem] font-body-1-medium">
+      <div className="self-stretch md:w-[72rem] xl:w-full flex flex-col items-start justify-start gap-[1.5rem]">
         <div className="w-full box-border px-2 sm:px-0 flex flex-col items-start justify-start gap-[1.25rem]">
           <div className="flex w-full flex-row items-center justify-between">
             <div className="relative leading-[1.75rem] font-medium">
@@ -77,7 +77,7 @@ const Dashboard = () => {
           Transactions | This Month
         </div>
 
-        <div className="rounded-lg bg-black-100 w-full box-border md:w-[72rem] shadow-[0px_2px_6px_rgba(26,_24,_30,_0.04)] overflow-hidden flex flex-col items-end justify-start pt-[0.75rem] px-[0.75rem] pb-[1.5rem] text-[0.75rem]">
+        <div className="rounded-lg bg-black-100 w-full box-border md:w-[72rem] xl:w-full shadow-[0px_2px_6px_rgba(26,_24,_30,_0.04)] overflow-hidden flex flex-col items-end justify-start pt-[0.75rem] px-[0.75rem] pb-[1.5rem] text-[0.75rem]">
           <div className="flex w-full flex-col items-end justify-start gap-[0.75rem] text-[0.72rem] md:text-[0.88rem] text-black-60">
             <div className="self-stretch flex gap-[0.25rem] flex-col md:flex-row items-center justify-between">
               <div className="w-full md:w-[15.5rem] flex flex-row items-start justify-start">

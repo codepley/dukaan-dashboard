@@ -12,7 +12,7 @@ function App() {
   }
 
   return (
-    <div className="relative bg-black-98 w-[screen] min-h-[92.63rem] text-left text-[1.25rem] text-black-12 font-caption-regular">
+    <div className="relative bg-black-98 w-[screen] h-[92.63rem] text-left text-[1.25rem] text-black-12 font-caption-regular">
       <Navbar handleSidebar={handleSidebar} />
       <Dashboard />
       <Sidebar showSidebar={showSidebar} handleSidebar={handleSidebar} />
