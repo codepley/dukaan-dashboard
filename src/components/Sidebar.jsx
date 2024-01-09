@@ -11,7 +11,7 @@ const Sidebar = ({showSidebar, handleSidebar}) => {
               <div className="self-stretch relative leading-[1.38rem] font-medium">
                 Nishyan
               </div>
-              <div className="self-stretch relative text-[0.81rem] [text-decoration:underline] leading-[1rem] font-caption-regular opacity-[0.8]">
+              <div className="self-stretch relative text-[0.81rem] [text-decoration:underline] leading-[1rem] opacity-[0.8]">
                 Visit store
               </div>
             </div>
