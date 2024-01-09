@@ -3,7 +3,7 @@ import OrderItem from "./OrderItem";
 const Dashboard = () => {
   return (
     <div className="absolute top-[6rem] left-[0] md:left-[14rem] xl:left-[calc(15.55%)] md:px-[2rem] w-full md:w-[76rem] xl:h-[full] xl:w-[calc(100%-15.55%)] flex flex-col items-start box-border justify-start gap-[2rem] font-body-1-medium">
-      <div className="self-stretch md:w-[72rem] xl:w-full flex flex-col items-start justify-start gap-[1.5rem]">
+      <div className="self-stretch px-2 md:px-0 md:w-[72rem] xl:w-full flex flex-col items-start justify-start gap-[1.5rem]">
         <div className="w-full box-border px-2 sm:px-0 flex flex-col items-start justify-start gap-[1.25rem]">
           <div className="flex w-full flex-row items-center justify-between">
             <div className="relative leading-[1.75rem] font-medium">
@@ -73,7 +73,7 @@ const Dashboard = () => {
       </div>
 
       <div className="flex flex-col w-full self-strech box-border px-2 sm:px-0 items-start justify-start gap-[1.25rem]">
-        <div className="relative leading-[1.75rem] font-medium">
+        <div className="relative px-2 md:px-0 leading-[1.75rem] font-medium">
           Transactions | This Month
         </div>
 
@@ -118,8 +118,8 @@ const Dashboard = () => {
               </div>
             </div>
 
-            <div className="rounded bg-black-95 w-full flex flex-row items-center justify-start py-[0.63rem] px-[0.75rem] box-border gap-[2.5rem] text-[0.75rem] text-black-30">
-              <div className="flex-1 overflow-hidden flex flex-col items-start justify-center">
+            <div className="rounded bg-black-95 w-full flex flex-row items-center justify-start py-[0.63rem] overflow-scroll px-[0.75rem] box-border gap-[2.5rem] text-[0.75rem] text-black-30">
+              <div className="flex-1 flex flex-col items-start justify-center">
                 <div className="flex flex-row items-center justify-start gap-[0.25rem]">
                   <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
                     <div className="flex flex-row items-center justify-start gap-[0.75rem]">
@@ -137,7 +137,7 @@ const Dashboard = () => {
                 </div>
               </div>
 
-              <div className="flex-1 overflow-hidden flex flex-col items-start justify-center">
+              <div className="flex-1 flex flex-col items-start justify-center">
                 <div className="flex flex-row items-center justify-start gap-[0.25rem]">
                   <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
                     <div className="flex flex-row items-center justify-start gap-[0.75rem]">
@@ -152,14 +152,9 @@ const Dashboard = () => {
                       </div>
                     </div>
                   </div>
-                  <img
-                    className="relative w-[0.5rem] h-[0.5rem] overflow-hidden shrink-0 object-cover"
-                    alt=""
-                    src="/triangleicon@2x.png"
-                  />
                 </div>
               </div>
-              <div className="flex-1 overflow-hidden flex flex-col items-end justify-center text-right">
+              <div className="flex-1 flex flex-col items-end justify-center text-right">
                 <div className="flex flex-row items-center justify-start gap-[0.25rem]">
                   <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
                     <div className="flex flex-row items-center justify-start gap-[0.75rem]">
@@ -226,19 +221,19 @@ const Dashboard = () => {
                     alt=""
                     src="/previous.svg"
                   />
-                  <div className="md:flex hidden flex-row items-start justify-start">
+                  <div className="flex flex-row items-start justify-start">
                     <div className="relative leading-[1.25rem] font-medium">
                       Previous
                     </div>
                   </div>
                 </div>
                 <div className="flex flex-row items-start justify-start gap-[0.25rem] md:gap-[0.5rem]">
-                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                  <div className="hidden rounded w-[1.75rem] h-[1.75rem] md:flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
                     <div className="self-stretch relative leading-[1.25rem]">
                       1
                     </div>
                   </div>
-                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                  <div className="rounded w-[1.75rem] h-[1.75rem] hidden md:flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
                     <div className="self-stretch relative leading-[1.25rem]">
                       ...
                     </div>
@@ -248,49 +243,49 @@ const Dashboard = () => {
                       10
                     </div>
                   </div>
-                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                  <div className="rounded w-[1.75rem] h-[1.75rem] hidden md:flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
                     <div className="self-stretch relative leading-[1.25rem]">
                       11
                     </div>
                   </div>
-                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                  <div className="rounded w-[1.75rem] h-[1.75rem] hidden md:flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
                     <div className="self-stretch relative leading-[1.25rem]">
                       12
                     </div>
                   </div>
-                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                  <div className="rounded w-[1.75rem] h-[1.75rem] hidden md:flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
                     <div className="self-stretch relative leading-[1.25rem]">
                       13
                     </div>
                   </div>
-                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                  <div className="rounded w-[1.75rem] h-[1.75rem] hidden md:flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
                     <div className="self-stretch relative leading-[1.25rem]">
                       14
                     </div>
                   </div>
-                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                  <div className="rounded w-[1.75rem] h-[1.75rem] hidden md:flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
                     <div className="self-stretch relative leading-[1.25rem]">
                       15
                     </div>
                   </div>
-                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                  <div className="rounded w-[1.75rem] h-[1.75rem] hidden md:flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
                     <div className="self-stretch relative leading-[1.25rem]">
                       16
                     </div>
                   </div>
-                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                  <div className="rounded w-[1.75rem] h-[1.75rem] hidden md:flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
                     <div className="self-stretch relative leading-[1.25rem]">
                       17
                     </div>
                   </div>
-                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                  <div className="rounded w-[1.75rem] h-[1.75rem] hidden md:flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
                     <div className="self-stretch relative leading-[1.25rem]">
                       18
                     </div>
                   </div>
                 </div>
                 <div className="rounded bg-black-100 flex flex-row items-center justify-center py-[0.38rem] pr-[0.38rem] pl-[0.5rem] md:pl-[0.75rem] gap-[0.38rem] border-[1px] border-solid border-black-85">
-                  <div className="md:flex hidden flex-row items-start justify-start">
+                  <div className="flex flex-row items-start justify-start">
                     <div className="relative leading-[1.25rem] font-medium">
                       Next
                     </div>
