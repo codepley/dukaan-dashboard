@@ -79,8 +79,8 @@ const Dashboard = () => {
 
         <div className="rounded-lg bg-black-100 w-full box-border md:w-[70.5rem] shadow-[0px_2px_6px_rgba(26,_24,_30,_0.04)] overflow-hidden flex flex-col items-end justify-start pt-[0.75rem] px-[0.75rem] pb-[1.5rem] text-[0.75rem]">
           <div className="flex w-full flex-col items-end justify-start gap-[0.75rem] text-[0.72rem] md:text-[0.88rem] text-black-60">
-            <div className="self-stretch flex flex-row items-center justify-between">
-              <div className="w-[15.5rem] flex flex-row items-start justify-start">
+            <div className="self-stretch flex gap-[0.25rem] flex-col md:flex-row items-center justify-between">
+              <div className="w-full md:w-[15.5rem] flex flex-row items-start justify-start">
                 <div className="flex-1 rounded bg-black-100 flex flex-row items-center justify-start py-[0.63rem] px-[1rem] gap-[0.5rem] border-[1px] border-solid border-black-85">
                   <img
                     className="relative w-[0.88rem] h-[0.88rem] overflow-hidden shrink-0 object-cover"
@@ -92,9 +92,9 @@ const Dashboard = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-row items-center justify-start gap-[0.75rem] text-[1rem] text-black-30 font-body-1-medium">
-                <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                  <div className="flex flex-row items-center justify-end gap-[0.75rem]">
+              <div className="flex w-full flex-row items-center justify-start gap-[0.75rem] text-[1rem] text-black-30 font-body-1-medium">
+                <div className="flex flex-row w-full items-center justify-end gap-[0.75rem]">
+                  <div className="flex flex-row w-full items-center justify-between md:justify-end gap-[0.75rem]">
                     <div className="flex flex-row items-center justify-start gap-[0.75rem]">
                       <div className="rounded bg-black-100 flex flex-row items-center justify-start py-[0.38rem] px-[0.75rem] gap-[0.38rem] border-[1px] border-solid border-black-85">
                         <div className="relative leading-[1.5rem]">Sort</div>
