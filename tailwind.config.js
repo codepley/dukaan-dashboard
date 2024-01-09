@@ -19,7 +19,7 @@ export default {
         'sm': '720px',
         'md': '864px',
         'lg': '1152px',
-        'xl': '1440px',
+        'xl': '1441px',
         '2xl': '1728px'
       },
       colors: {

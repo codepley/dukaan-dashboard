@@ -4,17 +4,17 @@ const Sidebar = ({ showSidebar, handleSidebar }) => {
     <div
       className={`absolute md:${showSidebar ? "flex" : "flex"} ${
         showSidebar ? "flex" : "hidden"
-      } top-[0rem] left-[0rem] h-[105rem] md:h-full flex-col items-start justify-start text-[0.94rem] text-black-100 font-body-1-medium`}
+      } top-[0rem] left-[0rem] h-[105rem] md:h-full xl:h-[full] md:w-[14rem] xl:w-[calc(15.55%)] flex-col items-start justify-start text-[0.94rem] text-black-100 font-body-1-medium`}
     >
-      <div className="flex-1 bg-secondary-navbar w-full md:w-[14rem] flex flex-col items-center justify-start py-[1rem] px-[0.63rem] box-border gap-[1rem]">
-        <div className="flex-1 flex flex-col items-center justify-start gap-[1.5rem]">
+      <div className="flex-1 bg-secondary-navbar w-full md:w-[14rem] xl:w-full flex flex-col items-center justify-start py-[1rem] px-[0.63rem] box-border gap-[1rem]">
+        <div className="flex-1 xl:w-full flex flex-col items-center justify-start gap-[1.5rem]">
           <div
             onClick={handleSidebar}
             className="md:hidden cursor-pointer text-lg"
           >
             Close
           </div>
-          <div className="w-[12rem] flex flex-row items-center justify-start relative gap-[0.75rem]">
+          <div className="w-[12rem] xl:w-[calc(85.71%)] flex flex-row items-center justify-start relative gap-[0.75rem]">
             <div className="relative rounded bg-black-100 w-[2.5rem] h-[2.5rem] z-[0]" />
             <div className="flex-1 flex flex-col items-start justify-center gap-[0.25rem] z-[1]">
               <div className="self-stretch relative leading-[1.38rem] font-medium">
@@ -35,7 +35,7 @@ const Sidebar = ({ showSidebar, handleSidebar }) => {
               src="/sidebar/down.svg"
             />
           </div>
-          <div className="flex-1 flex flex-col items-start justify-start gap-[0.25rem] text-[0.88rem]">
+          <div className="flex-1 xl:w-full flex flex-col items-start justify-start gap-[0.25rem] text-[0.88rem]">
             <div className="rounded w-[13rem] flex flex-row items-start justify-start py-[0.5rem] px-[1rem] box-border gap-[0.75rem]">
               <img
                 className="relative w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0 object-cover opacity-[0.8]"
@@ -160,7 +160,7 @@ const Sidebar = ({ showSidebar, handleSidebar }) => {
           </div>
         </div>
 
-        <div className="rounded bg-darkslategray w-[12rem] flex flex-col items-start justify-start py-[0.38rem] px-[0.75rem] box-border text-[0.81rem]">
+        <div className="rounded bg-darkslategray w-[12rem] xl:w-[calc(85.71%)] flex flex-col items-start justify-start xl:items-center xl:justify-center py-[0.38rem] px-[0.75rem] box-border text-[0.81rem]">
           <div className="flex flex-row items-center justify-start gap-[0.75rem]">
             <div className="rounded bg-gray flex flex-row items-start justify-start p-[0.38rem]">
               <img
