@@ -4,7 +4,7 @@ const Dashboard = () => {
   return (
     <div className="absolute top-[6rem] left-[0] md:left-[14rem] md:px-[2rem] w-full md:w-[72rem] flex flex-col items-start justify-start gap-[2rem] font-body-1-medium">
       <div className="self-stretch flex flex-col items-start justify-start gap-[1.5rem]">
-        <div className="w-full box-border px-2 flex flex-col items-start justify-start gap-[1.25rem]">
+        <div className="w-full box-border px-2 sm:px-0 flex flex-col items-start justify-start gap-[1.25rem]">
           <div className="flex w-full flex-row items-center justify-between">
             <div className="relative leading-[1.75rem] font-medium">
               Overview
@@ -25,7 +25,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="self-stretch px-2 flex flex-col sm:flex-row items-start justify-start gap-[1.25rem] text-[1rem] text-black-30">
+        <div className="self-stretch px-2 sm:px-0 flex flex-col sm:flex-row items-start justify-start gap-[1.25rem] text-[1rem] text-black-30">
           <div className="flex-1 w-full flex flex-row items-center justify-center">
             <div className="flex-1 rounded-spacing-spacing-04 bg-black-100 shadow-[0px_2px_6px_rgba(26,_24,_30,_0.04)] flex flex-col items-start justify-start p-[1.25rem]">
               <div className="self-stretch flex flex-col items-start justify-start gap-[1rem]">
@@ -77,7 +77,7 @@ const Dashboard = () => {
           Transactions | This Month
         </div>
 
-        <div className="rounded-lg bg-black-100 w-full box-border md:w-[70.5rem] shadow-[0px_2px_6px_rgba(26,_24,_30,_0.04)] overflow-hidden flex flex-col items-end justify-start pt-[0.75rem] px-[0.75rem] pb-[1.5rem] text-[0.75rem]">
+        <div className="rounded-lg bg-black-100 bg-blue-400 w-full box-border md:w-[72rem] shadow-[0px_2px_6px_rgba(26,_24,_30,_0.04)] overflow-hidden flex flex-col items-end justify-start pt-[0.75rem] px-[0.75rem] pb-[1.5rem] text-[0.75rem]">
           <div className="flex w-full flex-col items-end justify-start gap-[0.75rem] text-[0.72rem] md:text-[0.88rem] text-black-60">
             <div className="self-stretch flex gap-[0.25rem] flex-col md:flex-row items-center justify-between">
               <div className="w-full md:w-[15.5rem] flex flex-row items-start justify-start">
