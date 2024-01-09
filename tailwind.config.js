@@ -15,6 +15,13 @@ export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        'sm': '720px',
+        'md': '864px',
+        'lg': '1152px',
+        'xl': '1440px',
+        '2xl': '1728px'
+      },
       colors: {
         "black-98": "#fafafa",
         "secondary-navbar": "#1e2640",
