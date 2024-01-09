@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import Dashboard from "./components/Dashboard"
 import Navbar from "./components/Navbar"
 import Sidebar from "./components/Sidebar"
@@ -10,12 +10,6 @@ function App() {
   function handleSidebar() {
     setShowSidebar(!showSidebar);
   }
-
-  useEffect(() => {
-    if(window.screen.width > 864){
-      setShowSidebar(true);
-    }
-  }, [])
 
   return (
     <div className="relative bg-black-98 w-full min-h-[92.63rem] text-left text-[1.25rem] text-black-12 font-caption-regular">
