@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 const Sidebar = ({showSidebar, handleSidebar}) => {
   return (
-    <div className={`absolute md:${showSidebar ? 'flex' : 'flex'} ${showSidebar ? 'flex' : 'hidden'} top-[0rem] left-[0rem] h-[96rem] md:h-full w-full flex-col items-start justify-start text-[0.94rem] text-black-100 font-body-1-medium`}>
+    <div className={`absolute md:${showSidebar ? 'flex' : 'flex'} ${showSidebar ? 'flex' : 'hidden'} top-[0rem] left-[0rem] h-[105rem] md:h-full w-full flex-col items-start justify-start text-[0.94rem] text-black-100 font-body-1-medium`}>
       <div className="flex-1 bg-secondary-navbar w-full md:w-[14rem] flex flex-col items-center justify-start py-[1rem] px-[0.63rem] box-border gap-[1rem]">
         <div className="flex-1 flex flex-col items-center justify-start gap-[1.5rem]">
         <div onClick={handleSidebar} className="md:hidden text-lg">Close</div>
