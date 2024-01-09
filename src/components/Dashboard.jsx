@@ -1,9 +1,11 @@
+import OrderItem from "./OrderItem";
+
 const Dashboard = () => {
   return (
-    <div className="absolute top-[6rem] left-[16rem] w-[72rem] flex flex-col items-start justify-start gap-[2rem] font-body-1-medium">
+    <div className="absolute top-[6rem] left-[0] md:left-[14rem] md:px-[2rem] w-full md:w-[72rem] flex flex-col items-start justify-start gap-[2rem] font-body-1-medium">
       <div className="self-stretch flex flex-col items-start justify-start gap-[1.5rem]">
-        <div className="self-stretch flex flex-col items-start justify-start gap-[1.25rem]">
-          <div className="self-stretch flex flex-row items-center justify-between">
+        <div className="w-full box-border px-2 flex flex-col items-start justify-start gap-[1.25rem]">
+          <div className="flex w-full flex-row items-center justify-between">
             <div className="relative leading-[1.75rem] font-medium">
               Overview
             </div>
@@ -21,19 +23,10 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div className="hidden flex-row items-start justify-start gap-[0.75rem] text-[0.88rem] text-black-100 font-body-1-medium">
-            <div className="rounded-21xl bg-primary-blue flex flex-row items-center justify-start py-[0.38rem] px-[1rem] gap-[0.38rem]">
-              <div className="relative leading-[1.25rem] font-medium">
-                Razorpay
-              </div>
-            </div>
-            <div className="rounded-21xl bg-black-90 flex flex-row items-center justify-start py-[0.38rem] px-[1rem] gap-[0.63rem] text-black-50">
-              <div className="relative leading-[1.25rem] font-medium">{`COD orders (Dukaan Delivery) `}</div>
-            </div>
-          </div>
         </div>
-        <div className="self-stretch flex flex-row items-start justify-start gap-[1.25rem] text-[1rem] text-black-30">
-          <div className="flex-1 flex flex-row items-center justify-center">
+
+        <div className="self-stretch px-2 flex flex-col sm:flex-row items-start justify-start gap-[1.25rem] text-[1rem] text-black-30">
+          <div className="flex-1 w-full flex flex-row items-center justify-center">
             <div className="flex-1 rounded-spacing-spacing-04 bg-black-100 shadow-[0px_2px_6px_rgba(26,_24,_30,_0.04)] flex flex-col items-start justify-start p-[1.25rem]">
               <div className="self-stretch flex flex-col items-start justify-start gap-[1rem]">
                 <div className="flex flex-row items-center justify-start gap-[0.5rem]">
@@ -45,7 +38,7 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div className="flex-1 rounded-spacing-spacing-04 bg-black-100 shadow-[0px_2px_6px_rgba(26,_24,_30,_0.04)] flex flex-col items-start justify-start p-[1.25rem]">
+          <div className="flex-1 w-full box-border rounded-spacing-spacing-04 bg-black-100 shadow-[0px_2px_6px_rgba(26,_24,_30,_0.04)] flex flex-col items-start justify-start p-[1.25rem]">
             <div className="self-stretch flex flex-col items-start justify-start gap-[1rem]">
               <div className="flex flex-row items-center justify-start gap-[0.5rem]">
                 <div className="relative leading-[1.5rem]">Amount received</div>
@@ -79,14 +72,13 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-start justify-start gap-[1.25rem]">
+      <div className="flex flex-col w-full self-strech box-border px-2 sm:px-0 items-start justify-start gap-[1.25rem]">
         <div className="relative leading-[1.75rem] font-medium">
           Transactions | This Month
         </div>
 
-        <div className="rounded-lg bg-black-100 shadow-[0px_2px_6px_rgba(26,_24,_30,_0.04)] overflow-hidden flex flex-col items-end justify-start pt-[0.75rem] px-[0.75rem] pb-[1.5rem] text-[0.75rem]">
-
-          <div className="flex flex-col items-end justify-start gap-[0.75rem] text-[0.88rem] text-black-60">
+        <div className="rounded-lg bg-black-100 w-full box-border md:w-[70.5rem] shadow-[0px_2px_6px_rgba(26,_24,_30,_0.04)] overflow-hidden flex flex-col items-end justify-start pt-[0.75rem] px-[0.75rem] pb-[1.5rem] text-[0.75rem]">
+          <div className="flex w-full flex-col items-end justify-start gap-[0.75rem] text-[0.72rem] md:text-[0.88rem] text-black-60">
             <div className="self-stretch flex flex-row items-center justify-between">
               <div className="w-[15.5rem] flex flex-row items-start justify-start">
                 <div className="flex-1 rounded bg-black-100 flex flex-row items-center justify-start py-[0.63rem] px-[1rem] gap-[0.5rem] border-[1px] border-solid border-black-85">
@@ -126,13 +118,13 @@ const Dashboard = () => {
               </div>
             </div>
 
-            <div className="rounded bg-black-95 w-[70.5rem] flex flex-row items-center justify-start py-[0.63rem] px-[0.75rem] box-border gap-[2.5rem] text-[0.75rem] text-black-30">
+            <div className="rounded bg-black-95 w-full flex flex-row items-center justify-start py-[0.63rem] px-[0.75rem] box-border gap-[2.5rem] text-[0.75rem] text-black-30">
               <div className="flex-1 overflow-hidden flex flex-col items-start justify-center">
                 <div className="flex flex-row items-center justify-start gap-[0.25rem]">
                   <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
                     <div className="flex flex-row items-center justify-start gap-[0.75rem]">
                       <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
+                        <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.72rem] md:text-[0.88rem]">
                           <div className="flex flex-row items-center justify-start gap-[0.25rem]">
                             <div className="relative leading-[1.25rem] font-medium">
                               Order ID
@@ -150,7 +142,7 @@ const Dashboard = () => {
                   <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
                     <div className="flex flex-row items-center justify-start gap-[0.75rem]">
                       <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
+                        <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.72rem] md:text-[0.88rem]">
                           <div className="flex flex-row items-center justify-start gap-[0.25rem]">
                             <div className="relative leading-[1.25rem] font-medium">
                               Order date
@@ -166,17 +158,13 @@ const Dashboard = () => {
                     src="/triangleicon@2x.png"
                   />
                 </div>
-                <div className="flex flex-row items-start justify-start gap-[5.63rem] opacity-[0] mt-[-0.06rem]">
-                  <div className="relative rounded-[50%] w-[0rem] h-[0rem]" />
-                  <div className="relative rounded-[50%] w-[0rem] h-[0rem]" />
-                </div>
               </div>
               <div className="flex-1 overflow-hidden flex flex-col items-end justify-center text-right">
                 <div className="flex flex-row items-center justify-start gap-[0.25rem]">
                   <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
                     <div className="flex flex-row items-center justify-start gap-[0.75rem]">
                       <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
+                        <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.72rem] md:text-[0.88rem]">
                           <div className="flex flex-row items-center justify-start gap-[0.25rem]">
                             <div className="relative leading-[1.25rem] font-medium">
                               Order amount
@@ -187,30 +175,16 @@ const Dashboard = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-row items-start justify-start gap-[5.63rem] opacity-[0] mt-[-0.06rem]">
-                  <div className="relative rounded-[50%] w-[0rem] h-[0rem]" />
-                  <div className="relative rounded-[50%] w-[0rem] h-[0rem]" />
-                </div>
               </div>
-              <div className="flex-1 overflow-hidden flex flex-col items-end justify-center text-right">
-                <div className="flex flex-row items-start justify-start gap-[5.63rem] opacity-[0]">
-                  <div className="relative rounded-[50%] w-[0rem] h-[0rem]" />
-                  <div className="relative rounded-[50%] w-[0rem] h-[0rem]" />
-                </div>
+              <div className="flex-1 flex flex-col items-end justify-center text-right">
                 <div className="flex flex-row items-center justify-start gap-[0.25rem] mt-[-0.06rem]">
                   <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                    <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                        <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                          <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                            <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                              <div className="relative leading-[1.25rem] font-medium">
-                                Transaction fees
-                              </div>
-                            </div>
+                    <div className="flex flex-row items-center justify-start gap-[1rem]">
+                        <div className="flex flex-row items-center justify-start gap-[0.25rem] text-[0.72rem] md:text-[0.88rem]">
+                          <div className="relative leading-[1.25rem] font-medium">
+                            Transaction fees
                           </div>
                         </div>
-                      </div>
                     </div>
                   </div>
                   <img
@@ -223,1028 +197,109 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className="bg-black-100 border-solid border-b border-[rgba(0,0,0,0.1)] w-[70.5rem] h-[3rem] flex flex-row items-center justify-start py-[0.88rem] px-[0.75rem] box-border relative gap-[2.5rem]">
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center z-[0] text-primary-blue">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="relative leading-[1.25rem] font-medium">{`#281209 `}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className=" ">
-                            7 July, 2023
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[3] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">
-                            ₹1,278.23
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[4] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">₹22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div className="bg-black-100 border-solid border-b border-[rgba(0,0,0,0.1)] w-[70.5rem] h-[3rem] flex flex-row items-center justify-start py-[0.88rem] px-[0.75rem] box-border relative gap-[2.5rem]">
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center z-[0] text-primary-blue">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="relative leading-[1.25rem] font-medium">{`#281209 `}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className=" ">
-                            7 July, 2023
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[3] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">
-                            ₹1,278.23
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[4] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">₹22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div className="bg-black-100 border-solid border-b border-[rgba(0,0,0,0.1)] w-[70.5rem] h-[3rem] flex flex-row items-center justify-start py-[0.88rem] px-[0.75rem] box-border relative gap-[2.5rem]">
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center z-[0] text-primary-blue">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="relative leading-[1.25rem] font-medium">{`#281209 `}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className=" ">
-                            7 July, 2023
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[3] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">
-                            ₹1,278.23
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[4] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">₹22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div className="bg-black-100 border-solid border-b border-[rgba(0,0,0,0.1)] w-[70.5rem] h-[3rem] flex flex-row items-center justify-start py-[0.88rem] px-[0.75rem] box-border relative gap-[2.5rem]">
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center z-[0] text-primary-blue">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="relative leading-[1.25rem] font-medium">{`#281209 `}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className=" ">
-                            7 July, 2023
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[3] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">
-                            ₹1,278.23
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[4] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">₹22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div className="bg-black-100 border-solid border-b border-[rgba(0,0,0,0.1)] w-[70.5rem] h-[3rem] flex flex-row items-center justify-start py-[0.88rem] px-[0.75rem] box-border relative gap-[2.5rem]">
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center z-[0] text-primary-blue">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="relative leading-[1.25rem] font-medium">{`#281209 `}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className=" ">
-                            7 July, 2023
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[3] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">
-                            ₹1,278.23
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[4] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">₹22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div className="bg-black-100 border-solid border-b border-[rgba(0,0,0,0.1)] w-[70.5rem] h-[3rem] flex flex-row items-center justify-start py-[0.88rem] px-[0.75rem] box-border relative gap-[2.5rem]">
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center z-[0] text-primary-blue">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="relative leading-[1.25rem] font-medium">{`#281209 `}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className=" ">
-                            7 July, 2023
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[3] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">
-                            ₹1,278.23
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[4] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">₹22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div className="bg-black-100 border-solid border-b border-[rgba(0,0,0,0.1)] w-[70.5rem] h-[3rem] flex flex-row items-center justify-start py-[0.88rem] px-[0.75rem] box-border relative gap-[2.5rem]">
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center z-[0] text-primary-blue">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="relative leading-[1.25rem] font-medium">{`#281209 `}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className=" ">
-                            7 July, 2023
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[3] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">
-                            ₹1,278.23
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[4] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">₹22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div className="bg-black-100 border-solid border-b border-[rgba(0,0,0,0.1)] w-[70.5rem] h-[3rem] flex flex-row items-center justify-start py-[0.88rem] px-[0.75rem] box-border relative gap-[2.5rem]">
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center z-[0] text-primary-blue">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="relative leading-[1.25rem] font-medium">{`#281209 `}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className=" ">
-                            7 July, 2023
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[3] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">
-                            ₹1,278.23
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[4] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">₹22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div className="bg-black-100 border-solid border-b border-[rgba(0,0,0,0.1)] w-[70.5rem] h-[3rem] flex flex-row items-center justify-start py-[0.88rem] px-[0.75rem] box-border relative gap-[2.5rem]">
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center z-[0] text-primary-blue">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="relative leading-[1.25rem] font-medium">{`#281209 `}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className=" ">
-                            7 July, 2023
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[3] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">
-                            ₹1,278.23
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[4] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">₹22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div className="bg-black-100 border-solid border-b border-[rgba(0,0,0,0.1)] w-[70.5rem] h-[3rem] flex flex-row items-center justify-start py-[0.88rem] px-[0.75rem] box-border relative gap-[2.5rem]">
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center z-[0] text-primary-blue">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="relative leading-[1.25rem] font-medium">{`#281209 `}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className=" ">
-                            7 July, 2023
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[3] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">
-                            ₹1,278.23
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[4] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">₹22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div className="bg-black-100 border-solid border-b border-[rgba(0,0,0,0.1)] w-[70.5rem] h-[3rem] flex flex-row items-center justify-start py-[0.88rem] px-[0.75rem] box-border relative gap-[2.5rem]">
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center z-[0] text-primary-blue">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="relative leading-[1.25rem] font-medium">{`#281209 `}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className=" ">
-                            7 July, 2023
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[3] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">
-                            ₹1,278.23
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[4] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">₹22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div className="bg-black-100 border-solid border-b border-[rgba(0,0,0,0.1)] w-[70.5rem] h-[3rem] flex flex-row items-center justify-start py-[0.88rem] px-[0.75rem] box-border relative gap-[2.5rem]">
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center z-[0] text-primary-blue">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="relative leading-[1.25rem] font-medium">{`#281209 `}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className=" ">
-                            7 July, 2023
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[3] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">
-                            ₹1,278.23
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[4] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">₹22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div className="bg-black-100 border-solid border-b border-[rgba(0,0,0,0.1)] w-[70.5rem] h-[3rem] flex flex-row items-center justify-start py-[0.88rem] px-[0.75rem] box-border relative gap-[2.5rem]">
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center z-[0] text-primary-blue">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="relative leading-[1.25rem] font-medium">{`#281209 `}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className=" ">
-                            7 July, 2023
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[3] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">
-                            ₹1,278.23
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[4] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">₹22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div className="bg-black-100 border-solid border-b border-[rgba(0,0,0,0.1)] w-[70.5rem] h-[3rem] flex flex-row items-center justify-start py-[0.88rem] px-[0.75rem] box-border relative gap-[2.5rem]">
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center z-[0] text-primary-blue">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="relative leading-[1.25rem] font-medium">{`#281209 `}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className=" ">
-                            7 July, 2023
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[3] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">
-                            ₹1,278.23
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[4] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">₹22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div className="bg-black-100 border-solid border-b border-[rgba(0,0,0,0.1)] w-[70.5rem] h-[3rem] flex flex-row items-center justify-start py-[0.88rem] px-[0.75rem] box-border relative gap-[2.5rem]">
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center z-[0] text-primary-blue">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="relative leading-[1.25rem] font-medium">{`#281209 `}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className=" ">
-                            7 July, 2023
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[3] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">
-                            ₹1,278.23
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[4] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">₹22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div className="bg-black-100 border-solid border-b border-[rgba(0,0,0,0.1)] w-[70.5rem] h-[3rem] flex flex-row items-center justify-start py-[0.88rem] px-[0.75rem] box-border relative gap-[2.5rem]">
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center z-[0] text-primary-blue">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="relative leading-[1.25rem] font-medium">{`#281209 `}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-start justify-center">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className=" ">
-                            7 July, 2023
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[3] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">
-                            ₹1,278.23
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex-1 bg-black-100 overflow-hidden flex flex-col items-end justify-center z-[4] text-right">
-                <div className="overflow-hidden flex flex-row items-center justify-start gap-[1rem]">
-                  <div className="flex flex-row items-center justify-start gap-[0.75rem]">
-                    <div className="flex flex-col items-start justify-center gap-[0.13rem]">
-                      <div className="flex flex-row items-center justify-start gap-[0.5rem] text-[0.88rem]">
-                        <div className="flex flex-row items-center justify-start gap-[0.25rem]">
-                          <div className="relative leading-[1.25rem]">₹22</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          
-
-          
+          <OrderItem />
+          <OrderItem />
+          <OrderItem />
+          <OrderItem />
+          <OrderItem />
+          <OrderItem />
+          <OrderItem />
+          <OrderItem />
+          <OrderItem />
+          <OrderItem />
+          <OrderItem />
+          <OrderItem />
+          <OrderItem />
+          <OrderItem />
+          <OrderItem />
+          <OrderItem />
+          <OrderItem />
+          <OrderItem />
+          <OrderItem />
 
           <div className="flex w-full flex-col items-center justify-center">
-            
-            <div className="flex flex-col items-center justify-center text-center text-[0.88rem] text-black-30 w-full font-body-1-medium mt-[1.5rem]">
-              <div className="flex flex-col items-center justify-center">
-                <div className="flex flex-col items-center justify-center">
-                  <div className="flex flex-col items-center justify-start">
-                    <div className="flex flex-row items-center justify-start gap-[1.5rem]">
-                      <div className="rounded bg-black-100 flex flex-row items-center justify-center py-[0.38rem] pr-[0.75rem] pl-[0.38rem] gap-[0.38rem] border-[1px] border-solid border-black-85">
-                        <img
-                          className="relative w-[1.13rem] h-[1.13rem] overflow-hidden shrink-0 object-contain"
-                          alt=""
-                          src="/previous.svg"
-                        />
-                        <div className="flex flex-row items-start justify-start">
-                          <div className="relative leading-[1.25rem] font-medium">
-                            Previous
-                          </div>
-                        </div>
-                      </div>
-                      <div className="flex flex-row items-start justify-start gap-[0.5rem]">
-                        <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
-                          <div className="self-stretch relative leading-[1.25rem]">
-                            1
-                          </div>
-                        </div>
-                        <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
-                          <div className="self-stretch relative leading-[1.25rem]">
-                            ...
-                          </div>
-                        </div>
-                        <div className="rounded bg-primary-blue w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.38rem] px-[0.5rem] box-border text-black-100">
-                          <div className="relative leading-[1.25rem] font-medium">
-                            10
-                          </div>
-                        </div>
-                        <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
-                          <div className="self-stretch relative leading-[1.25rem]">
-                            11
-                          </div>
-                        </div>
-                        <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
-                          <div className="self-stretch relative leading-[1.25rem]">
-                            12
-                          </div>
-                        </div>
-                        <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
-                          <div className="self-stretch relative leading-[1.25rem]">
-                            13
-                          </div>
-                        </div>
-                        <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
-                          <div className="self-stretch relative leading-[1.25rem]">
-                            14
-                          </div>
-                        </div>
-                        <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
-                          <div className="self-stretch relative leading-[1.25rem]">
-                            15
-                          </div>
-                        </div>
-                        <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
-                          <div className="self-stretch relative leading-[1.25rem]">
-                            16
-                          </div>
-                        </div>
-                        <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
-                          <div className="self-stretch relative leading-[1.25rem]">
-                            17
-                          </div>
-                        </div>
-                        <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
-                          <div className="self-stretch relative leading-[1.25rem]">
-                            18
-                          </div>
-                        </div>
-                      </div>
-                      <div className="rounded bg-black-100 flex flex-row items-center justify-center py-[0.38rem] pr-[0.38rem] pl-[0.75rem] gap-[0.38rem] border-[1px] border-solid border-black-85">
-                        <div className="flex flex-row items-start justify-start">
-                          <div className="relative leading-[1.25rem] font-medium">
-                            Next
-                          </div>
-                        </div>
-                        <img
-                          className="relative w-[1.13rem] h-[1.13rem] overflow-hidden shrink-0 object-cover"
-                          alt=""
-                          src="/next.svg"
-                        />
-                      </div>
+            <div className="flex w-full flex-col items-center justify-center text-center text-[0.88rem] text-black-30 font-body-1-medium mt-[1.5rem]">
+              <div className="flex w-full flex-row items-center justify-between gap-[1rem] md:gap-[1.5rem]">
+                <div className="rounded bg-black-100 flex flex-row items-center justify-center py-[0.38rem] pr-[0.5rem] md:pr-[0.75rem] pl-[0.38rem] gap-[0.38rem] border-[1px] border-solid border-black-85">
+                  <img
+                    className="relative w-[1.13rem] h-[1.13rem] overflow-hidden shrink-0 object-contain"
+                    alt=""
+                    src="/previous.svg"
+                  />
+                  <div className="md:flex hidden flex-row items-start justify-start">
+                    <div className="relative leading-[1.25rem] font-medium">
+                      Previous
                     </div>
                   </div>
+                </div>
+                <div className="flex flex-row items-start justify-start gap-[0.25rem] md:gap-[0.5rem]">
+                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                    <div className="self-stretch relative leading-[1.25rem]">
+                      1
+                    </div>
+                  </div>
+                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                    <div className="self-stretch relative leading-[1.25rem]">
+                      ...
+                    </div>
+                  </div>
+                  <div className="rounded bg-primary-blue w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.38rem] px-[0.5rem] box-border text-black-100">
+                    <div className="relative leading-[1.25rem] font-medium">
+                      10
+                    </div>
+                  </div>
+                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                    <div className="self-stretch relative leading-[1.25rem]">
+                      11
+                    </div>
+                  </div>
+                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                    <div className="self-stretch relative leading-[1.25rem]">
+                      12
+                    </div>
+                  </div>
+                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                    <div className="self-stretch relative leading-[1.25rem]">
+                      13
+                    </div>
+                  </div>
+                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                    <div className="self-stretch relative leading-[1.25rem]">
+                      14
+                    </div>
+                  </div>
+                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                    <div className="self-stretch relative leading-[1.25rem]">
+                      15
+                    </div>
+                  </div>
+                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                    <div className="self-stretch relative leading-[1.25rem]">
+                      16
+                    </div>
+                  </div>
+                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                    <div className="self-stretch relative leading-[1.25rem]">
+                      17
+                    </div>
+                  </div>
+                  <div className="rounded w-[1.75rem] h-[1.75rem] flex flex-col items-center justify-center py-[0.13rem] px-[0rem] box-border">
+                    <div className="self-stretch relative leading-[1.25rem]">
+                      18
+                    </div>
+                  </div>
+                </div>
+                <div className="rounded bg-black-100 flex flex-row items-center justify-center py-[0.38rem] pr-[0.38rem] pl-[0.5rem] md:pl-[0.75rem] gap-[0.38rem] border-[1px] border-solid border-black-85">
+                  <div className="md:flex hidden flex-row items-start justify-start">
+                    <div className="relative leading-[1.25rem] font-medium">
+                      Next
+                    </div>
+                  </div>
+                  <img
+                    className="relative w-[1.13rem] h-[1.13rem] overflow-hidden shrink-0 object-cover"
+                    alt=""
+                    src="/next.svg"
+                  />
                 </div>
               </div>
             </div>
