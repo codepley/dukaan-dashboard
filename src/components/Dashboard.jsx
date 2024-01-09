@@ -2,7 +2,7 @@ import OrderItem from "./OrderItem";
 
 const Dashboard = () => {
   return (
-    <div className="absolute top-[6rem] left-[0] md:left-[14rem] xl:left-[calc(15.55%)] md:px-[2rem] w-full md:w-[76rem] xl:h-[full] xl:w-[calc(100%-15.55%)] flex flex-col items-start box-border justify-start gap-[2rem] font-body-1-medium">
+    <div className="absolute top-[6rem] left-[0] md:left-[14rem] xl:left-[calc(15.55%)] md:px-[2rem] w-full md:w-[76rem] xl:h-[calc(100%)] xl:w-[calc(100%-15.55%)] flex flex-col items-start box-border justify-start gap-[2rem] font-body-1-medium">
       <div className="self-stretch px-2 md:px-0 md:w-[72rem] xl:w-full flex flex-col items-start justify-start gap-[1.5rem]">
         <div className="w-full box-border px-2 sm:px-0 flex flex-col items-start justify-start gap-[1.25rem]">
           <div className="flex w-full flex-row items-center justify-between">
