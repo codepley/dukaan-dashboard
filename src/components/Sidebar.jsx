@@ -4,7 +4,7 @@ const Sidebar = ({showSidebar, handleSidebar}) => {
     <div className={`absolute md:${showSidebar ? 'flex' : 'flex'} ${showSidebar ? 'flex' : 'hidden'} top-[0rem] left-[0rem] h-[105rem] md:h-full w-full flex-col items-start justify-start text-[0.94rem] text-black-100 font-body-1-medium`}>
       <div className="flex-1 bg-secondary-navbar w-full md:w-[14rem] flex flex-col items-center justify-start py-[1rem] px-[0.63rem] box-border gap-[1rem]">
         <div className="flex-1 flex flex-col items-center justify-start gap-[1.5rem]">
-        <div onClick={handleSidebar} className="md:hidden text-lg">Close</div>
+        <div onClick={handleSidebar} className="md:hidden cursor-pointer text-lg">Close</div>
           <div className="w-[12rem] flex flex-row items-center justify-start relative gap-[0.75rem]">
             <div className="relative rounded bg-black-100 w-[2.5rem] h-[2.5rem] z-[0]" />
             <div className="flex-1 flex flex-col items-start justify-center gap-[0.25rem] z-[1]">
