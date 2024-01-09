@@ -77,7 +77,7 @@ const Dashboard = () => {
           Transactions | This Month
         </div>
 
-        <div className="rounded-lg bg-black-100 bg-blue-400 w-full box-border md:w-[72rem] shadow-[0px_2px_6px_rgba(26,_24,_30,_0.04)] overflow-hidden flex flex-col items-end justify-start pt-[0.75rem] px-[0.75rem] pb-[1.5rem] text-[0.75rem]">
+        <div className="rounded-lg bg-black-100 w-full box-border md:w-[72rem] shadow-[0px_2px_6px_rgba(26,_24,_30,_0.04)] overflow-hidden flex flex-col items-end justify-start pt-[0.75rem] px-[0.75rem] pb-[1.5rem] text-[0.75rem]">
           <div className="flex w-full flex-col items-end justify-start gap-[0.75rem] text-[0.72rem] md:text-[0.88rem] text-black-60">
             <div className="self-stretch flex gap-[0.25rem] flex-col md:flex-row items-center justify-between">
               <div className="w-full md:w-[15.5rem] flex flex-row items-start justify-start">
