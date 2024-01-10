@@ -4,7 +4,7 @@ const Sidebar = ({ showSidebar, handleSidebar }) => {
     <div
       className={`absolute md:${showSidebar ? "flex" : "flex"} ${
         showSidebar ? "flex" : "hidden"
-      } top-[0rem] left-[0rem] h-[105rem] md:h-full xl:h-[calc(100vh)] md:w-[14rem] xl:w-[calc(15.55%)] flex-col items-start justify-start text-[0.94rem] text-black-100 font-body-1-medium`}
+      } top-[0rem] left-[0rem] h-[105rem] md:h-full xl:h-[full] md:w-[14rem] xl:w-[calc(15.55%)] flex-col items-start justify-start text-[0.94rem] text-black-100 font-body-1-medium`}
     >
       <div className="flex-1 bg-secondary-navbar w-full md:w-[14rem] xl:w-full flex flex-col items-center justify-start py-[1rem] px-[0.63rem] box-border gap-[1rem]">
         <div className="flex-1 xl:w-full flex flex-col items-center justify-start gap-[1.5rem]">
